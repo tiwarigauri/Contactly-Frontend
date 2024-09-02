@@ -26,7 +26,7 @@ const EditContact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put("https://contactms-api.vercel.app/contactmsyt/update-contact/"+id, values, {
+      .put("https://contactly-backend.vercel.app/contactmsyt/update-contact/"+id, values, {
         headers: {
           Authorization: `Berear ${localStorage.getItem('token')}`
         }
@@ -47,7 +47,7 @@ const EditContact = () => {
 
   useEffect(() => {
     axios
-      .get("https://contactms-api.vercel.app/contactmsyt/contact/"+id, {
+      .get("https://contactly-backend.vercel.app/contactmsyt/contact/"+id, {
         headers: {
           Authorization: `Berear ${localStorage.getItem("token")}`,
         },
