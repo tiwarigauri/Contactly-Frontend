@@ -9,11 +9,10 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="navbar-left">
             <Link to="/" className='navbar-brand'>
-                CONTACT MS
+                CONTACTLY
             </Link>
         </div>
         <div className="navbar-right">
-            <Link to="/about" className='navbar-link'>About</Link>
             {
               user ? <>
               <Link to="/dashboard" className='navbar-link'>Contact</Link>
